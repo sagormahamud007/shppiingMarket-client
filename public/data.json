@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "WINTER SALE",
+        "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
+        "bg": "f5fafd",
+        "image": "https://ophelie.qodeinteractive.com/wp-content/uploads/2018/03/land-img-6.png"
+    },
+    {
+        "id": 2,
+        "title": "POPULAR SALE",
+        "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
+        "bg": "f5fafd",
+        "image": "https://ophelie.qodeinteractive.com/wp-content/uploads/2018/03/land-img-5.png"
+    },
+    {
+        "id": 1,
+        "title": "WINTER SALE",
+        "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
+        "bg": "f5fafd",
+        "image": "https://ophelie.qodeinteractive.com/wp-content/uploads/2018/04/landing-spotlight.png"
+    }
+]
