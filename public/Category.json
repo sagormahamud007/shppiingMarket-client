@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Long Sleeve Casual Shirt For Man",
+        "price": "৳ 250",
+        "image": "https://bd-live-21.slatic.net/kf/S0b96adfa31824dcc97fd31b79ad13438G.jpg",
+        "detailsInfo":{
+            "img1":"https://bd-live-21.slatic.net/kf/Sadf07aa777ca47739e7e0c16315549874.jpg",
+            "img2":"https://bd-live-21.slatic.net/kf/Sa08d1a0e6770474f8ecc30259179f57cP.jpg",
+            "img3":"https://bd-live-21.slatic.net/kf/Sede1d982bec447fab136ba10367aa470C.jpg"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Smart & Stylish Denim Jeans Pant For Men",
+        "price": "৳ 270",
+        "image": "https://static-01.daraz.com.bd/p/mdc/5be30973c06ed6b73262e165526fde39.jpg",
+        "detailsInfo":{
+            "img1":"https://static-01.daraz.com.bd/p/mdc/5be30973c06ed6b73262e165526fde39.jpg",
+            "im2g":"https://static-01.daraz.com.bd/p/mdc/43a1e248cfff2c7203850f5c60254653.jpg",
+            "img3":"https://static-01.daraz.com.bd/p/3342aff847cc00bce9137966db0a1cbd.jpg"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Cycling Jecket",
+        "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
+        "bg": "#dbc5cf",
+        "image": "https://cdn.shopify.com/s/files/1/1541/4249/products/product_grande.jpg?v=1476422571"
+    },
+    {
+        "id": 4,
+        "title": "Drenim trucker Jecket",
+        "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
+        "bg": "#dbc5cf",
+        "image": "https://cdn.shopify.com/s/files/1/1541/4249/collections/product-14_grande.jpg?v=1476518684"
+    }
+]

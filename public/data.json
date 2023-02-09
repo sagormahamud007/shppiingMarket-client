@@ -1,23 +1,27 @@
 [
     {
-        "id": 1,
-        "title": "WINTER SALE",
-        "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-        "bg": "f5fafd",
-        "image": "https://ophelie.qodeinteractive.com/wp-content/uploads/2018/03/land-img-6.png"
+      
+        "title": "Hiking Jecket",
+        "description": "Etiam vehicula, sapien eget congue posuere, nisi diam mattis urna, in semper turpis nunc in odio. Aenean aliquet metus nec...",
+        "bg": "#dbc5cf",
+        "image": "https://cdn.shopify.com/s/files/1/1541/4249/products/product_3_grande.jpg?v=1476422643"
     },
     {
-        "id": 2,
-        "title": "POPULAR SALE",
+    
+        "title": "Half Sleeve Comfortable T-Shirt For Men All Season - Tshirt For Men",
+        "price":"৳ 78",
+        "discount":"৳ 150",
         "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-        "bg": "f5fafd",
-        "image": "https://ophelie.qodeinteractive.com/wp-content/uploads/2018/03/land-img-5.png"
+        "bg": "#dbc5cf",
+        "image": "https://static-01.daraz.com.bd/p/fb3b4f7122bc9d9f4c6806297dea8051.jpg"
     },
     {
-        "id": 1,
-        "title": "WINTER SALE",
+  
+        "title": "Premium Full Sleeves Casual Shirt for Men (Shirt for Men) By Scatman (White)",
+        "price":"৳ 649",
+        "discount":"৳ 1,090",
         "description": "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-        "bg": "f5fafd",
-        "image": "https://ophelie.qodeinteractive.com/wp-content/uploads/2018/04/landing-spotlight.png"
+        "bg": "#dbc5cf",
+        "image": "https://static-01.daraz.com.bd/p/8b6bda5f62d8c49694fa67406ad183df.png"
     }
 ]

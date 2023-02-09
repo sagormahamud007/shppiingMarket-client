@@ -1,11 +1,14 @@
 
+import { RouterProvider } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
-import Home from './Pages/Home/Home';
+import { router } from './Shere/Router';
 
 function App() {
   return (
     <div>
-      <Home></Home>
+      <RouterProvider router={router}></RouterProvider>
+      <ToastContainer />
     </div>
   );
 }

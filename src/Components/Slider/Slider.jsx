@@ -1,13 +1,12 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material';
-import React, { useEffect, useState } from 'react';
-import Slider1 from '../../Asstes/Slider img/Slider1.png'
-import Slider2 from '../../Asstes/Slider img/Slider2.png'
-import Slider3 from '../../Asstes/Slider img/Slider3.png'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
     width: 100%;
     height: 100vh;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -38,6 +37,7 @@ display: flex;
 transition: all 1.5s ease;
 transform: translateX(${(props) => props.slideIndex * -100}vw);
 `
+
 const Slide = styled.div`
 width:100vw;
 height: 100vh;
@@ -57,7 +57,7 @@ flex:1;
 padding:50px;
 `
 const Title = styled.h1`
-font-size: 70px;
+font-size: 50px;
 ;
 `
 const Desc = styled.p`
@@ -80,7 +80,7 @@ const Slider = () => {
     const [slideItems, setSlideItems] = useState([])
 
     useEffect(() => {
-        fetch("data.json")
+        fetch("http://localhost:5000/bannerProduct")
             .then(res => res.json())
             .then(data => setSlideItems(data))
     }
@@ -101,6 +101,7 @@ const Slider = () => {
             <Wrapper slideIndex={slideIndex}>
                 {
                     slideItems.map((item) => (
+
                         <Slide bg={item.bg}>
                             <ImgContainer>
                                 <Image src={item?.image} />
@@ -108,7 +109,7 @@ const Slider = () => {
                             <InfoContainer>
                                 <Title>{item?.title}</Title>
                                 <Desc>{item?.description}</Desc>
-                                <Button>SHOW NOW</Button>
+                                <Link to={'/productList'}><Button>SHOP NOW</Button></Link>
                             </InfoContainer>
                         </Slide>
                     ))

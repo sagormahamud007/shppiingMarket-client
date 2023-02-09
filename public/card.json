@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "title":"Stylish Premium Winter Jacket For Men",
+        "price":"৳ 335",
+        "discount":"৳ 1,699",
+        "review":"5",
+        "delivery":"Standard Delivery",
+        "deliveryAmount":"৳ 62",
+        "cashDelivery":"Cash on Delivery Available",
+        "return":"7 Day Return",
+        "warranty":"Warranty not available",
+        "Location":"Dhaka, Dhaka Mirpur, road No. 12 - 19",
+        "img":"https://gcp-img.slatic.net/lazada/id0039074-480-72.png#width=480&height=72",
+        "image":"https://static-01.daraz.com.bd/p/2dd4f96bddeb40b9309117dc6829d22b.jpg"
+    },
+    {
+        "id":2,
+        "title":"Indian Ethenic Kurti with Detached Koti [Block Print]",
+        "price":"৳ 335",
+        "discount":"৳ 580",
+        "review":"5",
+        "delivery":"Standard Delivery",
+        "deliveryAmount":"৳ 62",
+        "cashDelivery":"Cash on Delivery Available",
+        "return":"7 Day Return",
+        "warranty":"Warranty not available",
+        "Location":"Dhaka, Dhaka Mirpur, road No. 12 - 19",
+        "img":"https://gcp-img.slatic.net/lazada/id0039074-480-72.png#width=480&height=72",
+        "image":"https://static-01.daraz.com.bd/p/78c0664013b8c94f6815e40a73e54055.jpg",
+        "imgInfo":{
+            "img1":"https://static-01.daraz.com.bd/p/e4982b3a5ee01dd7f937d81240fc8a53.jpg",
+            "img2":"https://static-01.daraz.com.bd/p/fcbf4b26687de492523458452fe4d84a.jpg",
+            "img3":"https://static-01.daraz.com.bd/p/78c0664013b8c94f6815e40a73e54055.jpg",
+            "img4":"https://static-01.daraz.com.bd/p/76bb730c7b14e392b1ad7572cbff5c4a.jpg"
+        }
+    },
+    {
+        "id":3,
+        "title":"Pakistani Laser cut 2 piece for women [ Exclusive dress]",
+        "price":"৳ 335",
+        "discount":"৳ 430",
+        "review":"155",
+        "delivery":"Standard Delivery",
+        "deliveryAmount":"৳ 62",
+        "cashDelivery":"Cash on Delivery Available",
+        "return":"7 Day Return",
+        "warranty":"Warranty not available",
+        "Location":"Dhaka, Dhaka Mirpur, road No. 12 - 19",
+        "img":"https://gcp-img.slatic.net/lazada/id0039074-480-72.png#width=480&height=72",
+        "image":"https://static-01.daraz.com.bd/p/6bc10629b647221559e923f4d284d814.jpg",
+        "imgInfo":{
+            "img1":"https://static-01.daraz.com.bd/p/1a7d87f3a95ff28846c0f57f0089e9d0.jpg",
+            "img2":"https://static-01.daraz.com.bd/p/8b6f4624a92bd25aa1bf946cfec9efe1.jpg",
+            "img3":"https://static-01.daraz.com.bd/p/fe48a47f1ea9f7fa97f947f2e7114d20.jpg",
+            "img4":"https://static-01.daraz.com.bd/p/72738fe693cdc546ff3299e6dad2e622.jpg",
+            "img5":"https://static-01.daraz.com.bd/p/3c0a063bd0a7ec901cf57fd391d6d4b6.jpg"
+        }
+    },
+    {
+        "id":4,
+        "title":"Solid Color Fancy Tops Dress For Girls / woman fashion",
+        "price":"৳ 590",
+        "discount":"৳ 1,100",
+        "review":"15",
+        "delivery":"Standard Delivery",
+        "deliveryAmount":"৳ 62",
+        "cashDelivery":"Cash on Delivery Available",
+        "return":"7 Day Return",
+        "warranty":"Warranty not available",
+        "Location":"Dhaka, Dhaka Mirpur, road No. 12 - 19",
+        "img":"https://gcp-img.slatic.net/lazada/id0039074-480-72.png#width=480&height=72",
+        "image":"https://static-01.daraz.com.bd/p/65120f39a9efca53c5ecc31a10b07f91.jpg",
+        "imgInfo":{
+            "img1":"https://static-01.daraz.com.bd/p/507f34b2923ac63040b0828cd6775dde.jpg",
+            "img2":"https://static-01.daraz.com.bd/p/db22a3ffe19d7eccb048750419d7f5ea.jpg",
+            "img3":"https://static-01.daraz.com.bd/p/65120f39a9efca53c5ecc31a10b07f91.jpg",
+            "img4":"https://static-01.daraz.com.bd/p/72738fe693cdc546ff3299e6dad2e622.jpg",
+            "img5":"https://static-01.daraz.com.bd/p/e0cfd31173145db0a343dd5411a51108.jpg"
+        }
+    }
+]
