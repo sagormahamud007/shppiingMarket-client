@@ -9,6 +9,7 @@ import Dashboard from "../Pages/DashBoard/Dashboard";
 import PrivateRoute from "./PrivateRoute";
 import ProductsCategory from "../Pages/ProductsCategory/ProductsCategory";
 import { async } from "@firebase/util";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 export const router = createBrowserRouter([
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
             {
                 path: '/signUp',
                 element: <SignUp></SignUp>
+            },
+            {
+            path:'/*',
+            element:<ErrorPage></ErrorPage>
             },
             {
                 path: '/signIn',
@@ -41,7 +46,7 @@ export const router = createBrowserRouter([
                 path:"/productCategory/:id",
                 element:<ProductsCategory></ProductsCategory>,
                 loader:async ({ params }) => {
-                    return fetch(`http://localhost:5000/features/${params.id}`);
+                    return fetch(`https://shopping-market-server.vercel.app/features/${params.id}`);
                   }
             }
         ])

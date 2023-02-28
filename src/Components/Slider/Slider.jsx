@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+
 const Container = styled.div`
     width: 100%;
     height: 100vh;
@@ -50,7 +51,6 @@ flex:1
 `
 const Image = styled.img`
 height:100%
-
 `
 const InfoContainer = styled.div`
 flex:1;
@@ -80,7 +80,7 @@ const Slider = () => {
     const [slideItems, setSlideItems] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/bannerProduct")
+        fetch("https://shopping-market-server.vercel.app/bannerProduct")
             .then(res => res.json())
             .then(data => setSlideItems(data))
     }
@@ -104,10 +104,13 @@ const Slider = () => {
 
                         <Slide bg={item.bg}>
                             <ImgContainer>
-                                <Image src={item?.image} />
+                               <Image src={item?.image}/>
                             </ImgContainer>
-                            <InfoContainer>
-                                <Title>{item?.title}</Title>
+                            <InfoContainer data-aos="fade-left"
+                                data-aos-anchor="#example-anchor"
+                                data-aos-offset="500"
+                                data-aos-duration="500">
+                                <Title>{item?.title.slice(0,60)}...</Title>
                                 <Desc>{item?.description}</Desc>
                                 <Link to={'/productList'}><Button>SHOP NOW</Button></Link>
                             </InfoContainer>

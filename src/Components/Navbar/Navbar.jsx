@@ -71,7 +71,7 @@ const {user,logOut}=useContext(AuthContext)
 const { data:cartContent=[], refetch } = useQuery({
     queryKey: ['cartData', user?.email],
     queryFn:async () =>{
-  const res = await fetch(`http://localhost:5000/cartData?email=${user?.email}`)
+  const res = await fetch(`https://shopping-market-server.vercel.app/cartData?email=${user?.email}`)
   const data = await res.json()
   return data
     }
@@ -97,11 +97,11 @@ refetch()
       <Search style={{ fontSize: "16px", color: "gray", }}></Search>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Market</a>
+    <a className="btn btn-ghost normal-case text-3xl text-sky-700 font-bold">Market</a>
   </div>
 
   <div className="navbar-center hidden lg:flex">
-  <Logo>Shopping Market</Logo>
+  <Logo className='text-3xl text-sky-700 font-bold'>Shopping Market</Logo>
   </div>
   <div className="navbar-end">
   <Link style={{textDecoration:'none'}} to='/'><MenuItem>HOME</MenuItem></Link>

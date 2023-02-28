@@ -159,7 +159,7 @@ const Cart = () => {
  const { data:cartContent=[], } = useQuery({
   queryKey: ['cartData',user?.email],
   queryFn:async () =>{
-const res = await fetch(`http://localhost:5000/cartData?email=${user?.email}`)
+const res = await fetch(`https://shopping-market-server.vercel.app/cartData?email=${user?.email}`)
 const data = await res.json()
 return data
   }

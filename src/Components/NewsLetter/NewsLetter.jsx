@@ -42,7 +42,8 @@ color: white;
 
 const NewsLetter = () => {
     return (
-        <Container>
+        <Container data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <Title>Newsletter</Title>
             <Description>Get timely updates from your favorite products</Description>
             <InputContainer>

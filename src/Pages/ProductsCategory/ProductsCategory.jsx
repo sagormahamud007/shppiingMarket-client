@@ -58,10 +58,12 @@ const {user}=useContext(AuthContext)
 const navigate=useNavigate()
 const [count, setCount] = useState(0);
 
+
+
 // const { data:cartContent=[], refetch } = useQuery({
 //   queryKey: ['cartData', user?.email],
 //   queryFn:async () =>{
-// const res = await fetch(`http://localhost:5000/cartData?email=${user?.email}`)
+// const res = await fetch(`https://shopping-market-server.vercel.app/cartData?email=${user?.email}`)
 // const data = await res.json()
 // return data
 //   }
@@ -69,7 +71,15 @@ const [count, setCount] = useState(0);
 
 const cartCategory={...singleProduct}
 
-const {Location:address,cashDelivery,delivery,deliveryAmount,discount,image,img,imgInfo,price,return:beak,review,title,warranty,_id}=cartCategory
+const {Location:address,cashDelivery,delivery,deliveryAmount,discount,image,img,imgInfo,price,return:beak,review,title,warranty,_id}=cartCategory;
+
+const price2=parseInt(price)
+
+
+const [TotalPrice,setTotalPrice]=useState(0)
+console.log(typeof(TotalPrice))
+
+
 
 const cardInfo={
   price,
@@ -90,7 +100,7 @@ const cardInfo={
  }
 
  const quantity=()=>{
-  fetch("http://localhost:5000/cartData",{
+  fetch("https://shopping-market-server.vercel.app/cartData",{
   method:"POST",
   headers:{
       "content-type":"application/json"
@@ -106,6 +116,10 @@ const cardInfo={
 
 
 
+
+
+
+
 const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
@@ -114,9 +128,10 @@ const progressCircle = useRef(null);
   };
 
 
-  const incrementCount = () => {
+  const incrementCount = (TotalPrice) => {
     // Update state with incremented value
     setCount(count + 1);
+    setTotalPrice()
   };
   const decNum = () => {
     if(count>0)
@@ -209,6 +224,11 @@ const progressCircle = useRef(null);
 <p className="mb-3"><span className="font-bold"> Delivery </span> : {delivery}</p>
 <p className="mb-3"><span className="font-bold"> Delivery-Amount </span> : {deliveryAmount}</p>
 <p className="mb-3">Discount : {discount}</p>
+<p className="mb-3"><span className="font-bold"> Price </span> : 
+
+{price}
+
+</p>
 <h1 className="mb-3">Return : {beak}</h1>
 <p className="mb-3">Warranty : {warranty}</p>
 <p className="mb-3">Cash-Delivery : {cashDelivery}</p>

@@ -18,7 +18,7 @@ const Products = () => {
     const { data:categories=[], refetch } = useQuery({
         queryKey: ['categories'],
         queryFn:async () =>{
-      const res = await fetch('http://localhost:5000/features')
+      const res = await fetch('https://shopping-market-server.vercel.app/features')
       const data = await res.json()
       return data
         }
@@ -27,7 +27,7 @@ const Products = () => {
 
 
     return (
-       <div className='grid lg:grid-cols-3 mt-12 md:grid-cols-2 sm:grid-cols-1 gap-8'>
+       <div className='grid lg:grid-cols-3 px-4 mt-12 md:grid-cols-2 sm:grid-cols-1 gap-6'>
             {
                 categories.map(Category => <SingleCategory
                     key={Category.id}
