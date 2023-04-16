@@ -17,6 +17,7 @@ import './styles.css';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 import { useQuery } from "@tanstack/react-query";
 import { AuthContext } from "../../Context/ContextProvider";
+import PrivateRoute from "../../Shere/PrivateRoute";
 
 const Filter=styled.div`
 display: flex;
@@ -51,30 +52,18 @@ align-items: center;
 justify-content: center;
 margin: 0px 5px;
 `
-
 const ProductsCategory = () => {
+
 const singleProduct=useLoaderData()
 const {user}=useContext(AuthContext)
 const navigate=useNavigate()
 const [count, setCount] = useState(0);
 
 
-
-// const { data:cartContent=[], refetch } = useQuery({
-//   queryKey: ['cartData', user?.email],
-//   queryFn:async () =>{
-// const res = await fetch(`https://shopping-market-server.vercel.app/cartData?email=${user?.email}`)
-// const data = await res.json()
-// return data
-//   }
-// })
-
 const cartCategory={...singleProduct}
-
 const {Location:address,cashDelivery,delivery,deliveryAmount,discount,image,img,imgInfo,price,return:beak,review,title,warranty,_id}=cartCategory;
 
 const price2=parseInt(price)
-
 
 const [TotalPrice,setTotalPrice]=useState(0)
 console.log(typeof(TotalPrice))
@@ -109,7 +98,6 @@ const cardInfo={
 })
       .then(res=>res.json())
       .then(result=>{
-          
       console.log(result)
       }).catch(err=>console.log(err))
  }
@@ -206,13 +194,10 @@ const progressCircle = useRef(null);
 <p onClick={incrementCount} className="text-3xl cursor-pointer">+</p>
 </div>
 
-
-<button onClick={()=>quantity()} className="btn btn-outline btn-secondary lg:mt-30"> ADD TO CART <ShoppingCartOutlinedIcon /></button>
-
-{/* {
-      user?.email &
-       <> <Link to={`/productCategory/${_id}`}><button className="btn btn-outline btn-secondary"> ADD TO CART <ShoppingCartOutlinedIcon /></button></Link>  : <Link to={'/signIn'}><button className="btn btn-outline btn-secondary"> ADD TO CART <ShoppingCartOutlinedIcon /></button></Link></>
-}  */}
+{
+      !user ?
+        <PrivateRoute><Link><button className="btn btn-outline btn-secondary"> ADD TO CART <ShoppingCartOutlinedIcon /></button> </Link></PrivateRoute> : <Link to={'/cart'}><button onClick={()=>quantity()} className="btn btn-outline btn-secondary"> ADD TO CART <ShoppingCartOutlinedIcon /></button></Link>
+} 
     
     
 </div>

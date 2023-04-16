@@ -27,7 +27,7 @@ const Products = () => {
 
 
     return (
-       <div className='grid lg:grid-cols-3 px-4 mt-12 md:grid-cols-2 sm:grid-cols-1 gap-6'>
+       <div className='grid lg:grid-cols-3  mt-12 md:grid-cols-2 sm:grid-cols-1 gap-6'>
             {
                 categories.map(Category => <SingleCategory
                     key={Category.id}

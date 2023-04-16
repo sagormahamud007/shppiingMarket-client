@@ -94,7 +94,7 @@ const Slider = () => {
 
     }
     return (
-        <Container>
+        <Container className='overflow-hidden'>
             <Arrow direction="left" onClick={() => handleClick("left")}>
                 <ArrowLeftOutlined style={{ fontSize: "50px", color: "teal" }} />
             </Arrow>

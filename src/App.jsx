@@ -13,7 +13,7 @@ function App() {
     AOS.refresh()
   }, [])
   return (
-    <div>
+    <div className='overflow-hidden'>
       <RouterProvider router={router}></RouterProvider>
       <ToastContainer />
     </div>

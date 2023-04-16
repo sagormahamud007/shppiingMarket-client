@@ -56,7 +56,7 @@ fetch("https://shopping-market-server.vercel.app/cartData",{
   }
     return (
       
-      <div className="card border w-96 bg-base-10 hover:translate-y-10 transition-all hover:shadow-lg">
+      <div className="card border w-96 bg-base-100 hover:translate-y-10 transition-all hover:shadow-lg overflow-hidden">
       <PhotoProvider>
         <PhotoView src={Category?.image}><figure><img data-aos="zoom-in" className="w-full p-2 h-80 relative" src={Category?.image} alt="car!"/></figure></PhotoView>
       </PhotoProvider>
